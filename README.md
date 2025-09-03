@@ -42,44 +42,44 @@ If you're starting fresh:
 npx create-react-app secrate_santa
 cd secrate_santa
 
-2. Install Dependencies
-✅ Tailwind CSS
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+2. Install Dependencies  
+✅ Tailwind CSS  
+npm install -D tailwindcss postcss autoprefixer  
+npx tailwindcss init -p  
 
-✅ PapaParse (for CSV parsing)
-npm install papaparse
+✅ PapaParse (for CSV parsing)  
+npm install papaparse  
 
-3. Configure Tailwind
-tailwind.config.js
-Update the content array:
+3. Configure Tailwind  
+tailwind.config.js  
+Update the content array:  
 
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+module.exports = {  
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],  
+  theme: {  
+    extend: {},  
+  },  
+  plugins: [],  
+}  
 
-src/index.css
-Replace the contents with:
+src/index.css  
+Replace the contents with:  
 
-css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+css  
+@tailwind base;  
+@tailwind components;  
+@tailwind utilities;  
 
-src/index.js
-Make sure it imports the CSS:
+src/index.js  
+Make sure it imports the CSS:  
 
-import './index.css';
+import './index.css';  
 
-4. Add Your App Code
+4. Add Your App Code  
 Replace the contents of src/App.js with your Secret Santa logic and UI. If you’ve modularized it, make sure your components are in src/components/ and your logic is in src/utils/.
 
-5. Run the App
-bash
-npm start
+5. Run the App  
+bash  
+npm start  
 
 
